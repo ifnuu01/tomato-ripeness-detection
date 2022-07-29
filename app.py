@@ -20,7 +20,7 @@ if ops=="HOME":
         st.header('TOMAT SETENGAH MATANG')
         st.image('SETENGAH MATANG.jpg')
     with col3:
-        st.header('TOMAT MENTAh')
+        st.header('TOMAT MENTAH')
         st.image('MENTAH.jpg') 
 
 
