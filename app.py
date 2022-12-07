@@ -113,13 +113,13 @@ elif ops=="CONTACT":
     with col2:
         st.image('Instagram.png')
 
-        if st.write("[Instagram](https://www.instagram.com)"):
+        if st.write("[Instagram](https://www.instagram.com/ifnuu__/)"):
             st.write()
    
     with col3:
         st.image('Facebook.png')
 
-        if st.write("[Facebook](https://www.facebook.com)"):
+        if st.write("[Facebook](https://www.facebook.com/ifnu.ifnu.756859/)"):
             st.write()
     
     with col4:
