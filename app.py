@@ -92,7 +92,7 @@ if ops=="ABOUT":
         st.write('Rafael')
         st.caption('........')
     
-    st.write("Kami membuat website ini untuk mendescripsikan tomat itu dengan kategori Matang/Setengah Matang/Mentah dengan Mengklasifikasi gambar (BUAH).")
+    st.write("Kami membuat website ini untuk mendescripsikan tomat itu dengan kategori Matang/Setengah Matang/Mentah dengan Mengklasifikasi gambar (SAYUR).")
 
 elif ops=="CONTACT":
     st.title('Sosial Media')
