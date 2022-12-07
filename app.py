@@ -73,7 +73,6 @@ if ops=="ABOUT":
         st.caption('Ketua (Modeling, Program, Dataset)')
     
     with col2:
-<<<<<<< HEAD
         st.image('Grub2.jpeg')
         st.write('Muhammad Arif Rahman')
         st.caption('Web Design')
