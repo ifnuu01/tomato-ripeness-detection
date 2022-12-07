@@ -134,11 +134,3 @@ elif ops=="CONTACT":
 
         if st.write("[Twitter](https://www.twitter.com)"):
             st.write()
-
-        
-            
-=======
-        st.image('photo_2022-07-09_21-04-25.jpg')
-        st.write('Maruto Nugroho')
-        st.caption('Dataset')
->>>>>>> 5a3656d014975b9f43060fe1805271c079a53eb6
