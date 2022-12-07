@@ -73,6 +73,7 @@ if ops=="ABOUT":
         st.caption('Ketua (Modeling, Program, Dataset)')
     
     with col2:
+<<<<<<< HEAD
         st.image('Grub2.jpeg')
         st.write('Muhammad Arif Rahman')
         st.caption('Web Design')
@@ -136,3 +137,8 @@ elif ops=="CONTACT":
 
         
             
+=======
+        st.image('photo_2022-07-09_21-04-25.jpg')
+        st.write('Maruto Nugroho')
+        st.caption('Dataset')
+>>>>>>> 5a3656d014975b9f43060fe1805271c079a53eb6
