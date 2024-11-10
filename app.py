@@ -14,18 +14,18 @@ if ops=="HOME":
     col1, col2, col3= st.columns(3)
     with col1:
         st.header('TOMAT MATANG')
-        st.image('MATANG.jpg')
+        st.image('img/MATANG.jpg')
     with col2:
         st.header('TOMAT SETENGAH MATANG')
-        st.image('SETENGAH MATANG.jpg')
+        st.image('img/SETENGAH MATANG.jpg')
     with col3:
         st.header('TOMAT MENTAH')
-        st.image('MENTAH.jpg') 
+        st.image('img/MENTAH.jpg') 
 
 
 elif ops=="PROGRAM":
     st.title('PROGRAM DETEKSI KEMATANGAN SAYUR TOMAT')
-    st.image('laptop-3706810__340.webp',caption=('Click Browse Files'))
+    st.image('img/laptop-3706810__340.webp',caption=('Click Browse Files'))
     
     file = st.file_uploader("Pastikan Gambar Bertype JPG/JPEG", type=['jpg','jpeg'])
 
@@ -68,27 +68,27 @@ if ops=="ABOUT":
     col4, col5, =st.columns(2)
 
     with col1:
-        st.image('Grub1.jpeg')
+        st.image('img/Grub1.jpeg')
         st.write('Ifnu Umar')
         st.caption('Ketua (Modeling, Program, Dataset)')
     
     with col2:
-        st.image('Grub2.jpeg')
+        st.image('img/Grub2.jpeg')
         st.write('Muhammad Arif Rahman')
         st.caption('Web Design')
     
     with col3:
-        st.image('Grub3.jpeg')
+        st.image('img/Grub3.jpeg')
         st.write('Akmal')
         st.caption('........')
     
     with col4:
-        st.image('Grub4.jpeg')
+        st.image('img/Grub4.jpeg')
         st.write('Rio febrian')
         st.caption('........')
    
     with col5:
-        st.image('Grub5.jpeg')
+        st.image('img/Grub5.jpeg')
         st.write('Rafael')
         st.caption('........')
     
