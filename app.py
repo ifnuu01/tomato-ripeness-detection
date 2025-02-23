@@ -3,7 +3,7 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image, ImageOps
 
-ops=st.sidebar.radio("MENU", options=("HOME", "PROGRAM", "ABOUT", "CONTACT"))
+ops=st.sidebar.radio("MENU", options=("HOME", "PROGRAM", "ABOUT"))
 
 if ops=="HOME":
     st.title("DETEKSI KEMATANGAN SAYUR TOMAT")
@@ -31,7 +31,7 @@ elif ops=="PROGRAM":
 
     def predict_stage(image_data,model):
         size =(200,200)
-        image = ImageOps.fit(image_data,size,Image.ANTIALIAS)
+        image = ImageOps.fit(image_data, size, Image.LANCZOS)
         image_array = np.array(image)
         normalized_image_array =(image_array.astype(np.float32) / 127.0)
         data = np.ndarray(shape=(1, 200, 200, 3),dtype=np.float32)
@@ -51,7 +51,7 @@ elif ops=="PROGRAM":
         st.text("MASUKAN GAMBAR TOMAT ANDA")
     else:
         image = Image.open(file)
-        st.image(image, use_column_width=True)
+        st.image(image, use_container_width=True)
         model = tf.keras.models.load_model('savetugas.h5')
         Generate_pred = st.button("Memprediksi tingkat kematangan.....")
         if Generate_pred:
@@ -93,43 +93,3 @@ if ops=="ABOUT":
         st.caption('........')
     
     st.write("Kami membuat website ini untuk mendescripsikan tomat itu dengan kategori Matang/Setengah Matang/Mentah dengan Mengklasifikasi gambar (SAYUR).")
-
-elif ops=="CONTACT":
-    st.title('Sosial Media')
-
-    col1, col2, col3, col4, col5 = st.columns( 5)
-    col1.write("WhatsApp")
-    col2.write("Instagram")
-    col3.write("Facebook")
-    col4.write("Youtube")
-    col5.write("Twitter")
-        
-    with col1:
-        st.image('whatsapp.webp')
-
-        if st.write("[Whatsapp](https://api.whatsapp.com/send/?phone=6289501603099&text=Bang+Save+Saya+%28Nama%29)"):
-            st.write()
-   
-    with col2:
-        st.image('Instagram.png')
-
-        if st.write("[Instagram](https://www.instagram.com/ifnuu__/)"):
-            st.write()
-   
-    with col3:
-        st.image('Facebook.png')
-
-        if st.write("[Facebook](https://www.facebook.com/ifnu.ifnu.756859/)"):
-            st.write()
-    
-    with col4:
-        st.image('Youtube.jpg')
-
-        if st.write("[Youtube](https://www.youtube.com)"):
-            st.write()
-
-    with col5:
-        st.image('Twitter.png')
-
-        if st.write("[Twitter](https://www.twitter.com)"):
-            st.write()
