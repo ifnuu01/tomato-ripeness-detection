@@ -2,8 +2,11 @@ import numpy as np
 import streamlit as st
 import tensorflow as tf
 from PIL import Image, ImageOps
+import streamlit as st
 
-ops=st.sidebar.radio("MENU", options=("HOME", "PROGRAM", "ABOUT"))
+st.set_page_config(page_title="Deteksi Tomat", page_icon="🍅", layout="centered", initial_sidebar_state="expanded")
+
+ops=st.sidebar.radio("MENU", options=("HOME", "PROGRAM"))
 
 if ops=="HOME":
     st.title("DETEKSI KEMATANGAN SAYUR TOMAT")
@@ -59,37 +62,3 @@ elif ops=="PROGRAM":
             st.text("Probalitas (0: Tomat Matang, 1: Tomat Mentah, 2: Tomat Setengah Matang)")
             st.write(prediction)
             
-if ops=="ABOUT": 
-    st.title('KELOMPOK 1')
-    st.caption('SMK N 5 Samarinda')
-
-    col1, =st.columns(1)
-    col2, col3, =st.columns(2)
-    col4, col5, =st.columns(2)
-
-    with col1:
-        st.image('img/Grub1.jpeg')
-        st.write('Ifnu Umar')
-        st.caption('Ketua (Modeling, Program, Dataset)')
-    
-    with col2:
-        st.image('img/Grub2.jpeg')
-        st.write('Muhammad Arif Rahman')
-        st.caption('Web Design')
-    
-    with col3:
-        st.image('img/Grub3.jpeg')
-        st.write('Akmal')
-        st.caption('........')
-    
-    with col4:
-        st.image('img/Grub4.jpeg')
-        st.write('Rio febrian')
-        st.caption('........')
-   
-    with col5:
-        st.image('img/Grub5.jpeg')
-        st.write('Rafael')
-        st.caption('........')
-    
-    st.write("Kami membuat website ini untuk mendescripsikan tomat itu dengan kategori Matang/Setengah Matang/Mentah dengan Mengklasifikasi gambar (SAYUR).")
